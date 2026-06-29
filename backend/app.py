@@ -46,8 +46,10 @@ def create_app() -> Flask:
     with app.app_context():
         try:
             db.create_all()
+            print("[DB] Database tables initialized")
         except Exception as e:
-            print(f"[DB] Tables may already exist: {e}")
+            print(f"[DB] Note: {str(e)}")
+            # Continue anyway - tables likely already exist
 
     # ── Health check ────────────────────────────────────────────────
     @app.get('/health')
