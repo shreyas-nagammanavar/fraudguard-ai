@@ -24,9 +24,8 @@ def create_app() -> Flask:
     app.config['MAX_CONTENT_LENGTH']        = 50 * 1024 * 1024   # 50 MB
 
     # ── Extensions ──────────────────────────────────────────────────
-    # Allow multiple origins (local + production)
-    allowed_origins = os.getenv('ALLOWED_ORIGINS', 'http://localhost:3000').split(',')
-    CORS(app, resources={r'/*': {'origins': allowed_origins}},
+    # Allow all origins for development/production
+    CORS(app, resources={r'/*': {'origins': '*'}},
          supports_credentials=True)
     db.init_app(app)
 
