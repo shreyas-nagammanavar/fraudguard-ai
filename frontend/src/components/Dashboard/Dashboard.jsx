@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Doughnut, Bar, Line } from 'react-chartjs-2';
+import { Doughnut, Bar } from 'react-chartjs-2';
 import {
   Chart as ChartJS, ArcElement, CategoryScale, LinearScale,
   BarElement, PointElement, LineElement, Title, Tooltip, Legend, Filler,
@@ -9,7 +9,7 @@ import {
   ChartBarIcon, ArrowTrendingUpIcon, CpuChipIcon,
 } from '@heroicons/react/24/outline';
 import API from '../../utils/api';
-import { StatCard, CardSkeleton, RiskBadge, FraudBadge, Spinner } from '../UI';
+import { StatCard, CardSkeleton, RiskBadge, FraudBadge } from '../UI';
 import { fmt, chartDefaults } from '../../utils/helpers';
 
 ChartJS.register(ArcElement, CategoryScale, LinearScale, BarElement,

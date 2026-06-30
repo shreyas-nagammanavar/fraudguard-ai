@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import {
-  ChartBarIcon, HomeIcon, ArrowUpTrayIcon, ClockIcon,
-  ChartPieIcon, UsersIcon, ArrowRightOnRectangleIcon,
+  HomeIcon, ArrowUpTrayIcon, ClockIcon,
+  UsersIcon, ArrowRightOnRectangleIcon,
   ShieldCheckIcon, Bars3Icon, XMarkIcon, BellIcon,
   CpuChipIcon,
 } from '@heroicons/react/24/outline';

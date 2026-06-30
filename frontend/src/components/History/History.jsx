@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import {
   MagnifyingGlassIcon, TrashIcon, ArrowDownTrayIcon,
-  FunnelIcon, ClockIcon,
+  ClockIcon,
 } from '@heroicons/react/24/outline';
 import API from '../../utils/api';
 import toast from 'react-hot-toast';
